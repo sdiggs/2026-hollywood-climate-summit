@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#FAF6EE">
+<meta name="description" content="Day-of information for the Scripps delegation at the Hollywood Climate Summit, June 3 and 4, 2026, in Los Angeles.">
+<title>Hollywood Climate Summit — Scripps Delegation 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FAF6EE;
+    --paper:#FFFDF7;
+    --ink:#1c1812;
+    --deep:#143f39;
+    --deep-soft:#1d564e;
+    --accent:#c2772e;
+    --accent-soft:#e6b877;
+    --muted:#6f685c;
+    --line:#e6ddca;
+    --line-strong:#d6c9ac;
+    --shadow:0 1px 2px rgba(28,24,18,.04),0 8px 28px rgba(28,24,18,.06);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Manrope",system-ui,sans-serif;
+    font-size:17px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:0 22px}
+
+  /* subtle top film strip */
+  .topbar{height:6px;background:
+    repeating-linear-gradient(90deg,var(--deep) 0 14px,transparent 14px 22px);
+    opacity:.85}
+
+  /* hero */
+  header.hero{padding:54px 0 40px}
+  .eyebrow{
+    font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--accent);margin-bottom:20px
+  }
+  h1{
+    font-family:"Fraunces",serif;font-weight:500;font-optical-sizing:auto;
+    font-size:clamp(40px,8.5vw,68px);line-height:1.02;letter-spacing:-.015em;
+    color:var(--deep)
+  }
+  .lede{
+    font-size:clamp(18px,2.4vw,21px);color:var(--ink);margin-top:22px;max-width:60ch;
+    line-height:1.55
+  }
+  .lede em{font-family:"Fraunces",serif;font-style:italic;color:var(--deep-soft)}
+
+  /* reveal animation */
+  .reveal{opacity:0;transform:translateY(14px);animation:rise .7s cubic-bezier(.2,.7,.2,1) forwards}
+  @keyframes rise{to{opacity:1;transform:none}}
+  .d1{animation-delay:.05s}.d2{animation-delay:.13s}.d3{animation-delay:.21s}
+  @media (prefers-reduced-motion:reduce){.reveal{animation:none;opacity:1;transform:none}}
+
+  /* day cards */
+  .days{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:8px 0 12px}
+  @media (max-width:620px){.days{grid-template-columns:1fr}}
+  .day{
+    background:var(--paper);border:1px solid var(--line);border-radius:16px;
+    padding:24px 22px 22px;box-shadow:var(--shadow);position:relative;overflow:hidden
+  }
+  .day::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--deep)}
+  .day .tag{
+    display:inline-block;font-size:12px;font-weight:700;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--accent);margin-bottom:10px
+  }
+  .day h2{
+    font-family:"Fraunces",serif;font-weight:500;font-size:25px;line-height:1.1;
+    color:var(--deep);margin-bottom:4px
+  }
+  .day .venue{font-weight:600;font-size:16px;margin-top:12px}
+  .day .addr{color:var(--muted);font-size:15px;line-height:1.45;margin-top:2px}
+  .day .rows{margin-top:16px;border-top:1px solid var(--line);padding-top:14px;display:grid;gap:8px}
+  .day .row{display:flex;gap:12px;font-size:15px}
+  .day .row .k{color:var(--muted);min-width:88px;font-weight:600}
+  .day .row .v{color:var(--ink)}
+  .day a.dir{
+    display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:14px;
+    font-weight:600;color:var(--deep);text-decoration:none;border-bottom:1.5px solid var(--accent-soft);
+    padding-bottom:1px
+  }
+  .day a.dir:hover{color:var(--accent)}
+
+  /* sections */
+  section{padding:38px 0;border-top:1px solid var(--line)}
+  section:first-of-type{border-top:none}
+  .kicker{
+    font-size:12.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--accent);margin-bottom:14px
+  }
+  h3{
+    font-family:"Fraunces",serif;font-weight:500;font-size:clamp(26px,4.2vw,33px);
+    line-height:1.08;letter-spacing:-.01em;color:var(--deep);margin-bottom:18px
+  }
+  p{margin-bottom:14px;color:var(--ink)}
+  p:last-child{margin-bottom:0}
+  a{color:var(--deep);text-decoration:underline;text-decoration-color:var(--accent-soft);text-underline-offset:3px}
+  a:hover{color:var(--accent)}
+
+  /* callout */
+  .callout{
+    background:var(--deep);color:#f5efe2;border-radius:14px;padding:20px 22px;margin:6px 0 18px
+  }
+  .callout .lbl{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-soft);margin-bottom:8px}
+  .callout strong{color:#fff}
+  .callout p{color:#ece4d3;margin:0}
+
+  /* bring / discuss lists */
+  ul.checklist{list-style:none;display:grid;gap:10px;margin:4px 0 0}
+  ul.checklist li{position:relative;padding-left:30px;line-height:1.45}
+  ul.checklist li::before{
+    content:"";position:absolute;left:0;top:8px;width:14px;height:14px;border-radius:4px;
+    border:2px solid var(--accent);background:transparent
+  }
+  ul.discuss{list-style:none;display:grid;gap:12px;margin:4px 0 0}
+  ul.discuss li{position:relative;padding-left:26px;line-height:1.5}
+  ul.discuss li::before{
+    content:"";position:absolute;left:2px;top:10px;width:7px;height:7px;border-radius:50%;
+    background:var(--accent)
+  }
+
+  /* numbered steps */
+  ol.steps{list-style:none;counter-reset:s;display:grid;gap:18px;margin-top:4px}
+  ol.steps li{counter-increment:s;position:relative;padding-left:52px;min-height:36px}
+  ol.steps li::before{
+    content:counter(s);position:absolute;left:0;top:0;width:36px;height:36px;border-radius:50%;
+    background:var(--paper);border:1.5px solid var(--line-strong);color:var(--deep);
+    font-family:"Fraunces",serif;font-size:18px;display:flex;align-items:center;justify-content:center
+  }
+  ol.steps li b{display:block;font-size:16px;margin-bottom:2px}
+  ol.steps li span{color:var(--muted);font-size:15.5px;line-height:1.5}
+
+  /* timeline schedule */
+  .sched{display:grid;gap:26px}
+  @media (min-width:621px){.sched{grid-template-columns:1fr 1fr;gap:30px}}
+  .sched h4{
+    font-family:"Fraunces",serif;font-weight:500;font-size:20px;color:var(--deep);
+    margin-bottom:4px
+  }
+  .sched .where{color:var(--muted);font-size:14px;margin-bottom:14px}
+  .tl{display:grid;gap:0;border-left:2px solid var(--line-strong);padding-left:0}
+  .tl .item{position:relative;padding:0 0 16px 20px}
+  .tl .item:last-child{padding-bottom:0}
+  .tl .item::before{
+    content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;
+    background:var(--bg);border:2.5px solid var(--accent)
+  }
+  .tl .item.muted::before{border-color:var(--line-strong)}
+  .tl .t{font-weight:700;font-size:14px;color:var(--deep);font-variant-numeric:tabular-nums}
+  .tl .e{font-size:15px;color:var(--ink);margin-top:1px}
+  .note{font-size:14px;color:var(--muted);font-style:italic;margin-top:18px;line-height:1.5}
+
+  /* reimbursement grid */
+  .facts{
+    background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden;
+    margin:6px 0 0
+  }
+  .facts .frow{display:flex;gap:0;border-top:1px solid var(--line)}
+  .facts .frow:first-child{border-top:none}
+  .facts .fk{
+    flex:0 0 38%;background:#f3ecdc;padding:13px 16px;font-weight:600;font-size:14px;color:var(--deep);
+    border-right:1px solid var(--line)
+  }
+  .facts .fv{flex:1;padding:13px 16px;font-size:15px;color:var(--ink)}
+  @media (max-width:520px){
+    .facts .frow{flex-direction:column}
+    .facts .fk{flex:none;border-right:none;border-bottom:1px solid var(--line)}
+  }
+
+  /* roster table */
+  .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+  table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:540px}
+  th{
+    background:var(--deep);color:#f5efe2;text-align:left;padding:12px 14px;font-weight:600;
+    font-size:12.5px;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap
+  }
+  td{padding:12px 14px;border-top:1px solid var(--line);vertical-align:top;line-height:1.4}
+  tr:nth-child(even) td{background:#fcf8ef}
+  td .pass{
+    display:inline-block;font-size:11.5px;font-weight:600;padding:2px 8px;border-radius:20px;
+    background:#eadfc8;color:var(--deep);white-space:nowrap
+  }
+  td .pass.speaker{background:#e3d3ad}
+  td .pass.student{background:#dfe6dd;color:var(--deep-soft)}
+
+  /* map */
+  .maps{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:6px}
+  @media (max-width:620px){.maps{grid-template-columns:1fr}}
+  .maps .mapcard{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--paper)}
+  .maps .mapcap{padding:11px 15px;font-size:13.5px;font-weight:600;color:var(--deep)}
+  .maps iframe{width:100%;height:200px;border:0;display:block;border-top:1px solid var(--line)}
+
+  /* contacts */
+  .contacts{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:4px}
+  @media (max-width:560px){.contacts{grid-template-columns:1fr}}
+  .contact{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+  .contact .role{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+  .contact .nm{font-family:"Fraunces",serif;font-size:19px;color:var(--deep);font-weight:500}
+  .contact .sub{font-size:13.5px;color:var(--muted);margin-bottom:8px}
+  .contact a{display:block;font-size:15px;margin-top:3px;text-decoration:none;color:var(--deep);font-weight:500}
+  .contact a:hover{color:var(--accent)}
+
+  footer{padding:42px 0 64px;border-top:1px solid var(--line);color:var(--muted);font-size:14px;line-height:1.6}
+  footer a{color:var(--deep)}
+</style>
+</head>
+<body>
+<div class="topbar"></div>
+
+<div class="wrap">
+
+  <header class="hero">
+    <div class="eyebrow reveal d1">Scripps Institution of Oceanography · Hollywood Climate Summit</div>
+    <h1 class="reveal d1">Hollywood Climate Summit</h1>
+    <p class="lede reveal d2">
+      Scripps is a sponsor for the second year running, with a table both days and a speaker on the mainstage.
+      Two venues, two very different rooms, one job for our delegation: put real climate scientists in front of
+      the people who shape film, TV, music, games, and the wider culture. This is the day-of page. The public
+      program lives at <a href="https://www.hollywoodclimatesummit.com/tickets/2026schedule">hollywoodclimatesummit.com</a>.
+    </p>
+  </header>
+
+  <!-- DAY CARDS -->
+  <div class="days reveal d3">
+    <div class="day">
+      <span class="tag">Day One · Wed June 3</span>
+      <h2>Samuel Goldwyn Theatre</h2>
+      <div class="venue">The Academy of Motion Picture Arts and Sciences</div>
+      <div class="addr">8949 Wilshire Boulevard<br>Beverly Hills, CA 90211</div>
+      <div class="rows">
+        <div class="row"><span class="k">Public doors</span><span class="v">9:00 AM</span></div>
+        <div class="row"><span class="k">Program</span><span class="v">10:00 AM – 5:00 PM</span></div>
+        <div class="row"><span class="k">Happy hour</span><span class="v">6:00 PM</span></div>
+        <div class="row"><span class="k">Set-up</span><span class="v">Rob and Lauren in by 8:15 AM</span></div>
+      </div>
+      <a class="dir" href="https://www.google.com/maps/dir/?api=1&destination=8949+Wilshire+Boulevard%2C+Beverly+Hills%2C+CA+90211">Get directions →</a>
+    </div>
+
+    <div class="day">
+      <span class="tag">Day Two · Thu June 4</span>
+      <h2>The Ebell of Los Angeles</h2>
+      <div class="venue">Historic clubhouse, Hancock Park</div>
+      <div class="addr">743 S Lucerne Boulevard<br>Los Angeles, CA 90005</div>
+      <div class="rows">
+        <div class="row"><span class="k">Load-in</span><span class="v">12:00 – 1:00 PM</span></div>
+        <div class="row"><span class="k">Doors</span><span class="v">1:00 PM (set by ~1:15)</span></div>
+        <div class="row"><span class="k">Program</span><span class="v">Starts 2:00 PM</span></div>
+        <div class="row"><span class="k">Breakdown</span><span class="v">5:00 PM · wrap party 8:00 PM</span></div>
+      </div>
+      <a class="dir" href="https://www.google.com/maps/dir/?api=1&destination=743+S+Lucerne+Boulevard%2C+Los+Angeles%2C+CA+90005">Get directions →</a>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section>
+    <div class="kicker">Why we're there</div>
+    <h3>Meeting a new audience where it already gathers</h3>
+    <p>
+      The communications office generates a lot of news coverage every year, but news consumption is shifting and
+      losing reach. This summit is a way to intersect with media and culture beyond the news cycle, and to find a
+      new audience for storytelling about our science. The crowd is entertainment and creator-economy professionals
+      across film and TV, music, gaming, and journalism, plus a corporate sustainability track focused on greening
+      the industry itself.
+    </p>
+    <p>
+      Many of these folks have never met a working climate scientist. The goal is simple: be approachable, be human,
+      and leave people curious enough to want to visit campus. Being an hour up the road from Los Angeles is a real
+      advantage for us, so lean into it.
+    </p>
+  </section>
+
+  <!-- BEFORE YOU COME -->
+  <section>
+    <div class="kicker">Before you come</div>
+    <h3>What to bring</h3>
+    <div class="callout">
+      <div class="lbl">First</div>
+      <p><strong>Your HCS pass.</strong> You'll have a sponsor, student and staff, or speaker pass assigned to you.
+      Have it ready at check-in so you move through quickly.</p>
+    </div>
+    <ul class="checklist">
+      <li>Phone, fully charged, plus a charger or battery pack</li>
+      <li>Comfortable shoes, since you'll be on your feet at the table</li>
+      <li>A water bottle</li>
+      <li>Layers, because indoor temperatures swing</li>
+      <li>A way to share your contact info, whether cards or a phone-friendly link</li>
+      <li>Your enthusiasm for your research, which is the whole point</li>
+    </ul>
+  </section>
+
+  <!-- WHEN YOU ARRIVE -->
+  <section>
+    <div class="kicker">When you arrive</div>
+    <h3>Getting in and getting started</h3>
+    <ol class="steps">
+      <li><b>Find the entrance</b><span>Day one is the Goldwyn Theatre on Wilshire in Beverly Hills. Day two is the Ebell on South Lucerne. If you're helping set up, head to the Scripps table area first.</span></li>
+      <li><b>Check in</b><span>Present your HCS pass at registration. If you can't find the Scripps table, ask any organizer or text one of the day-of contacts below.</span></li>
+      <li><b>Settle at the table</b><span>Find Rob or Lauren, drop your things, and get oriented on the talking points and any handouts we have out.</span></li>
+      <li><b>Trade off and explore</b><span>Plan to staff the table in shifts so everyone gets breaks to sit in on programming. Coordinate coverage with whoever is on with you.</span></li>
+    </ol>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section>
+    <div class="kicker">Run of the days</div>
+    <h3>Schedule</h3>
+    <div class="sched">
+      <div>
+        <h4>Wednesday, June 3</h4>
+        <div class="where">Samuel Goldwyn Theatre, Beverly Hills</div>
+        <div class="tl">
+          <div class="item muted"><div class="t">8:15 AM</div><div class="e">Rob and Lauren arrive for set-up</div></div>
+          <div class="item"><div class="t">9:00 AM</div><div class="e">Doors open to the public</div></div>
+          <div class="item"><div class="t">10:00 AM</div><div class="e">Programming begins</div></div>
+          <div class="item"><div class="t">5:00 PM</div><div class="e">Programming ends</div></div>
+          <div class="item muted"><div class="t">6:00 PM</div><div class="e">Happy hour</div></div>
+        </div>
+      </div>
+      <div>
+        <h4>Thursday, June 4</h4>
+        <div class="where">The Ebell of Los Angeles</div>
+        <div class="tl">
+          <div class="item muted"><div class="t">12:00 PM</div><div class="e">Sponsor load-in begins</div></div>
+          <div class="item"><div class="t">1:00 PM</div><div class="e">Doors open, table set by ~1:15</div></div>
+          <div class="item"><div class="t">2:00 PM</div><div class="e">Programming begins</div></div>
+          <div class="item muted"><div class="t">5:00 PM</div><div class="e">Sponsor breakdown</div></div>
+          <div class="item muted"><div class="t">8:00 PM</div><div class="e">Wrap party</div></div>
+        </div>
+      </div>
+    </div>
+    <p class="note">Table-staffing times are still being confirmed with the organizers, so treat these as working estimates. Session-level detail is on the <a href="https://www.hollywoodclimatesummit.com/tickets/2026schedule">official HCS schedule</a>.</p>
+  </section>
+
+  <!-- WHAT TO DISCUSS -->
+  <section>
+    <div class="kicker">At the table</div>
+    <h3>What to talk about</h3>
+    <p>
+      This audience is removed from real climate scientists and may carry assumptions about who we are, where we come
+      from, and what we look like. You get to gently rewrite that. A few openers that tend to land:
+    </p>
+    <ul class="discuss">
+      <li>What drew you to science in the first place</li>
+      <li>What you study, and why that subject grabbed you</li>
+      <li>How your work intersects with climate change, and what climate change means for your field, whether that's diminishing ecosystems, an organism under stress, melting glaciers, or rising temperatures</li>
+      <li>What a day in your life actually looks like, from fieldwork to the lab to the screen</li>
+      <li>Your genuine passion for the work</li>
+      <li>How climate research and environmental storytelling could show up better in entertainment media</li>
+    </ul>
+    <p style="margin-top:18px">If someone wants to learn more about Scripps or visit campus, connect them with Robert Monroe or Lauren Fimbres Wood.</p>
+  </section>
+
+  <!-- WHAT TO WEAR -->
+  <section>
+    <div class="kicker">Dress code</div>
+    <h3>What to wear</h3>
+    <p>
+      Last year the suggestion was business casual with a sustainable mindset: rewear what you already own, borrow,
+      or lean on vintage and sustainable brands. It was not a fancy crowd, so comfortable and put-together is the
+      right read. Reference photos of what our group wore last year are in the
+      <a href="https://drive.google.com/drive/folders/1fzXwqAh0MMDNPJtF6jGnoBNEXxYUMKIB?usp=drive_link">shared drive folder</a>.
+    </p>
+  </section>
+
+  <!-- GETTING THERE / REIMBURSEMENT -->
+  <section>
+    <div class="kicker">Travel and reimbursement</div>
+    <h3>Getting there and getting paid back</h3>
+    <p>
+      We're using donor funds to cover participation, including transportation and an overnight stay. Set up your
+      trip request and report through your business office. Carpooling is encouraged, so check the roster below for
+      who has room.
+    </p>
+    <div class="facts">
+      <div class="frow"><div class="fk">Concur approver</div><div class="fv">Mendy Cazares · <a href="mailto:mscazares@ucsd.edu">mscazares@ucsd.edu</a> (Financial Unit approver)</div></div>
+      <div class="frow"><div class="fk">Reimbursement index</div><div class="fv">Project 2040704, Task 1, Financial Unit 2000002</div></div>
+      <div class="frow"><div class="fk">Hotel</div><div class="fv">Book in Concur. UC max rate is $330/night. Comms is eyeing the AC Hotels by Marriott Beverly Hills, about 0.8 miles from the day-one venue.</div></div>
+      <div class="frow"><div class="fk">Driving</div><div class="fv">Mileage reimburses at 70 cents per mile. <a href="https://support.ucsd.edu/services?id=kb_article_view&sysparm_article=KB0032591">Reimbursement steps →</a></div></div>
+      <div class="frow"><div class="fk">Train</div><div class="fv">Take the train up and rideshare from LA Union Station. File a Trip Request first. <a href="https://support.ucsd.edu/services?id=kb_article_view&sysparm_article=KB0032013&sys_kb_id=a4e45c07db90a8d0d4781c791396198a">Trip Request via Concur →</a></div></div>
+    </div>
+  </section>
+
+  <!-- MAPS -->
+  <section>
+    <div class="kicker">Maps</div>
+    <h3>Both venues</h3>
+    <div class="maps">
+      <div class="mapcard">
+        <div class="mapcap">June 3 · Samuel Goldwyn Theatre</div>
+        <iframe loading="lazy" title="Map to Samuel Goldwyn Theatre" src="https://maps.google.com/maps?q=8949+Wilshire+Boulevard%2C+Beverly+Hills%2C+CA+90211&output=embed"></iframe>
+      </div>
+      <div class="mapcard">
+        <div class="mapcap">June 4 · The Ebell of Los Angeles</div>
+        <iframe loading="lazy" title="Map to The Ebell of Los Angeles" src="https://maps.google.com/maps?q=743+S+Lucerne+Boulevard%2C+Los+Angeles%2C+CA+90005&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROSTER -->
+  <section>
+    <div class="kicker">Who's going</div>
+    <h3>Delegation roster</h3>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>Name</th><th>Days</th><th>Pass</th><th>Cell</th><th>Travel</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Lauren Fimbres Wood<br><span style="color:var(--muted);font-size:13px">Communications</span></td><td>June 3 &amp; 4</td><td><span class="pass">Sponsor</span></td><td>858-337-1360</td><td>Driving up late 6/2, can offer rides up. No rides back.</td></tr>
+          <tr><td>Robert Monroe<br><span style="color:var(--muted);font-size:13px">Communications</span></td><td>June 3 &amp; 4</td><td><span class="pass">Sponsor</span></td><td>858-999-1738</td><td>—</td></tr>
+          <tr><td>Brendan Talwar<br><span style="color:var(--muted);font-size:13px">Semmens Lab</span></td><td>June 3 &amp; 4</td><td><span class="pass">Sponsor</span></td><td>502-777-0847</td><td>Up 6/3 at 9 AM (arrive ~noon), back 6/4 evening.</td></tr>
+          <tr><td>Allison Cusick</td><td>June 4 only</td><td><span class="pass">Sponsor</span></td><td>206-817-5003</td><td>Up early 6/4, returning 6/5.</td></tr>
+          <tr><td>Steve Diggs<br><span style="color:var(--muted);font-size:13px">Sandin Lab</span></td><td>TBD</td><td><span class="pass">Sponsor</span></td><td>619-990-8126</td><td>—</td></tr>
+          <tr><td>Arielle Pollock<br><span style="color:var(--muted);font-size:13px">Wangpraseurt Lab</span></td><td>June 3</td><td><span class="pass student">Student / Staff</span></td><td>910-622-7773</td><td>Train or looking for a carpool.</td></tr>
+          <tr><td>Mekayli Claros<br><span style="color:var(--muted);font-size:13px">Wangpraseurt Lab</span></td><td>June 3</td><td><span class="pass student">Student / Staff</span></td><td>562-521-2925</td><td>Train or looking for a carpool.</td></tr>
+          <tr><td>Anya Stajner<br><span style="color:var(--muted);font-size:13px">Decima Lab</span></td><td>TBD</td><td><span class="pass student">Student / Staff</span></td><td>—</td><td>—</td></tr>
+          <tr><td>V. Ramanathan</td><td>June 3 only</td><td><span class="pass speaker">Speaker</span></td><td>—</td><td>Likely a car service.</td></tr>
+          <tr><td>Jamin Greenbaum</td><td>TBD</td><td><span class="pass">Sponsor</span></td><td>—</td><td>—</td></tr>
+          <tr><td>Smith Lab</td><td>TBD</td><td>—</td><td>—</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- CONTACTS -->
+  <section>
+    <div class="kicker">Day-of contact</div>
+    <h3>Who to reach</h3>
+    <div class="contacts">
+      <div class="contact">
+        <div class="role">Lead</div>
+        <div class="nm">Lauren Fimbres Wood</div>
+        <div class="sub">Communications office</div>
+        <a href="tel:+18583371360">858-337-1360</a>
+      </div>
+      <div class="contact">
+        <div class="role">Lead</div>
+        <div class="nm">Robert Monroe</div>
+        <div class="sub">Communications office</div>
+        <a href="tel:+18589991738">858-999-1738</a>
+      </div>
+      <div class="contact">
+        <div class="role">Scripps science &amp; data</div>
+        <div class="nm">Steve Diggs</div>
+        <div class="sub">Sandin Lab</div>
+        <a href="tel:+16199908126">619-990-8126</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Day-of logistics for the Scripps delegation at the Hollywood Climate Summit, June 3 and 4, 2026.
+    The official summit program lives at <a href="https://www.hollywoodclimatesummit.com/tickets/2026schedule">hollywoodclimatesummit.com</a>.
+    <br>Last updated May 31, 2026.
+  </footer>
+
+</div>
+</body>
+</html>
